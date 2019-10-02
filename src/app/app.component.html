@@ -1,0 +1,103 @@
+<button (click)="Login()">Login</button>
+
+<button (click)="Get()">Get</button>
+
+<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Model</button>
+
+
+<div class="jumbotron text-center" >
+    <h1>My First Bootstrap Page</h1>
+    <p>Resize this responsive page to see the effect!</p> 
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Column 1</h3>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 2</h3>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 3</h3> 
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  </div>
+ 
+
+
+
+
+
+
+  <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <!-- Nav tabs -->
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home">CANDIDATES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">EMPLOYERS</a>
+    </li>
+    
+  </ul>
+  
+  
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      
+      <p>It's good to see you back!</p>
+      
+      <img src="../assets/facebook_sign_in.png" alt="" width="171px" height="39px">
+      <br>
+      <img src="../assets/google_sign_in.png" alt="" width="171px" height="39px">
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+  </div>
+        </div>
+        <table><tr>
+          <td style="width:47%"><hr/></td>
+          <td style="vertical-align:middle; text-align: center">OR</td>
+          <td style="width:47%"><hr/></td>
+          </tr></table>
+          <div>
+            <p style="text-align: center;cursor:pointer" (click)="show()">Login through email / phone</p>
+            <div id="mycontent" *ngIf="temp" style="text-align: center">
+             <div><input type="radio" name="login" value="1">Phone login &nbsp; <input type="radio" name="login" value="2">Email Login</div>            
+              <br>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Default</span>
+                </div>
+                <input type="text" class="form-control">
+              </div>             
+            </div>
+          </div>
+        <!-- Modal footer --> 
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div> -->
+        
+      </div>
+    </div>
+  </div>
+  

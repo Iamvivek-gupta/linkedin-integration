@@ -1,0 +1,11 @@
+.jumbotron{
+    background-image: linear-gradient(blue,rgb(99, 84, 84),yellow);
+    height: 100vh
+}
+
+#home{
+    
+    justify-content: center !important;
+    justify-items: center !important;
+
+}
